@@ -145,9 +145,9 @@ Bu nedenle `merge` projesinin alanında etkili olması öngörülmektedir.
 `merge` emülatörünü etkili bir şekilde geliştirmek için kullandığımız araçlar
 aşağıda listelenmiştir:
 
-# Rust Programlama Dili
+## Rust Programlama Dili
 
-## Cargo Paket Yöneticisi
+### Cargo Paket Yöneticisi
 
 Günümüz programlama dili paket yöneticilerinin modern standartlarına uygun şekilde
 yöneten `cargo`, `merge` ekosisteminin geliştirilmesinde büyük rol oynamıştır.
@@ -155,26 +155,26 @@ yöneten `cargo`, `merge` ekosisteminin geliştirilmesinde büyük rol oynamış
 `cargo` sayesinde projemizi derlemek, test etmek, yayımlamak gibi eylemler
 daha verimli hale getirilmiştir
 
-## Yüksek Seviye Sözdizimi
+### Yüksek Seviye Sözdizimi
 
 C ve C++ gibi düşük seviye programlama dillerinin aksine Rust, yüksek seviye bir
 sözdizimine sahiptir. Bu sayede programcılar, düşük seviye programlama
 dillerinde karşılaştıkları okunabilirik, yeniden düzenleme (refactoring) gibi
 konularda sıkıntılar yaşamazlar.
 
-## Ödünç Alma Denetleyicisi (Borrow Checker)
+### Ödünç Alma Denetleyicisi (Borrow Checker)
 
 Rust sahiplik (ownership) ve ödünç alma (borrowing) kavramları ile bütün
 bellek yönetimini derleme zamanında yapar. Böylece
 programcılar, bellek yönetimi ile uğraşmak zorunda kalmayıp
 işleyiş anındaki bellek hatalarının çoğunun önüne geçmiş olur.
 
-## Sistem Seviyesinde Performans
+### Sistem Seviyesinde Performans
 
 Rust, LLVM Derleyici altyapısını temel alan bir programlama dilidir. Bu yüzden
 yüksek seviyesinde performans sağlar.
 
-## Yeni Nesil Programlama
+### Yeni Nesil Programlama
 
 Rust yarı fonksiyonel bir programlama dili olduğundan dolayı fonksiyonel programlama
 dillerinin sahip olduğu kısa ve okunabilir kod yapısına sahiptir.
@@ -188,19 +188,19 @@ Desen eşleme, trait sistemi, güçlü ve cebirsel veri tipleri, fonksiyonel pro
 `rustc` ile birliklte çapraz derleyebildiğimiz `merge`,
 bütün modern işletim sistemlerinde çalışabilmektedir.
 
-## Eskiye Uyumluluk (Backward Compatiblity)
+### Eskiye Uyumluluk (Backward Compatiblity)
 
 Rust eskiye uyumlu olduğu için `merge` kaynak kodunu ileri safhalardaki derleyiciler de
 çalıştırabilecek ve böylece projemiz daha güvenli şekilde geliştirilebilecektir.
 
-# Git Versiyon Kontrol Sistemi
+## Git Versiyon Kontrol Sistemi
 
 Merge projesinin mekandan bağımsız ve eş zamanlı geliştirilebilmesi için bir
 organizasyon sistemine ihtiyaç duyulmuştur. Proje geliştirilirken, sürdürülebilirlik,
 geliştirme, test, dağıtım gibi pek çok aşamada kolaylık sağlanması adına
 endüstriyel standartlardan birisi olan Git Versiyon Kontrol sistemini kullanıldı.
 
-# Github
+## Github
 
 Sorun takipçisi (issue tracker), kod incelemesi (code review), özellik
 talebi (feature request), wiki gibi geniş çaplı projeler için gerekli olan
@@ -210,7 +210,7 @@ olarak GitHub platformunu kullanılmıştır.
 Bu sayede `merge`'in geliştirilmesi ve kullanıcıların karşılaştıkları problemlerin
 daha hızlı çözülmesi hedeflenmiştir.
 
-# JetBrains IDE, VSCode, Helix ve Vimacs
+## JetBrains IDE, VSCode, Helix ve Vimacs
 
 `merge`, IDE ve editör sektöründe profesyonel yazılımcılar tarafından önerilen JetBrains
 temelli RustRover, CLion ve VSCode IDE'leri; Vimacs[1] ve Helix terminal editörleri
@@ -250,7 +250,7 @@ Konfigurasyon dosyaları için bkz. Ek 2:
   - Nix ile yazılmış dekleratif konfigürasyon: TODO: link dotnix ft
 - bütün configurasyon dosyaları için: TODO: link em all
 
-# Merge Algoritmaları
+## Merge Algoritmaları
 
 Merge, geliştirilmeye açık olarak tasarlanmak istenildiğinden temel programlama
 prensiplerine uygun olarak temiz bir kod tabanı üzerine geliştirilmesi
@@ -261,7 +261,7 @@ tasarlanmıştır.
 Geliştirilmesi için bir çok rust kütüphanesinden yararlanılmıştır. (bkz.
 Cargo.toml's : TODO)
 
-## MgTWIN
+### MgTWIN
 
 > Merge çift yönlü tercüme (`merge` Two-Way InterpretatioN)
 
@@ -285,7 +285,7 @@ yukarıda verilen komutlar bütün sistemlerde çalışacaktır çünkü `merge`
 bu komut sistemlerinin hepsini anlamlandırıp kullandığınız işletim sisteminin
 komutlarına çevirebilmektedir.
 
-## MgMIR
+### MgMIR
 
 `merge`'in inovatif konfigürasyon stili için kullanılan `MgMIR`,
 hacimsel olarak çok az yer kaplamasıyla kendisine benzeyen sistemlerden ayrılmaktadır. `merge`'in ileriye dönük
@@ -326,7 +326,7 @@ Bütün durumları aynanda anlamlandırabilen `merge` toplamda 121 farklı kombi
 
 Yeni konfigürasyonlar eklemenin de kolay olduğu `merge`'in çalıştırabildiği komutların günden güne artması beklenmektedir.
 
-## MgPMS (Merge Package Manager Search)
+### MgPMS (Merge Package Manager Search)
 
 > Merge Paket arama aracı
 
@@ -334,14 +334,14 @@ Yeni konfigürasyonlar eklemenin de kolay olduğu `merge`'in çalıştırabildi�
 edinmesi gerekir. Bu verilere ulaşmak için geliştirdiğimiz `MgPMS` modülü,
 sisteminizdeki paket yöneticilerini güvenli bir şekilde `merge`'e aktarır.
 
-## MgCLI (Merge Commandline Interface)
+### MgCLI (Merge Commandline Interface)
 
 > Merge Komut Satırı Arayüzü
 
 Rust'ın güçlü presedürel makro sistemini kullanan `clap` kütüphanesini baz alan
 `MgCLI` sayesinde `merge`'in kullanımı daha pratik hale getirilmiştir.
 
-## MgDB (Merge Database)
+### MgDB (Merge Database)
 
 > Merge Veri tabanı
 
@@ -352,7 +352,7 @@ konfigürasyon dosyası olarak `$XDG_CONFIG_HOME` sistem değişkeninde bulunur.
 Böylece `merge`'i gerçek zamanlı konfigüre edebilir ve istediğiniz mantıksal
 terimleri `MgMIR` kullanarak tanımlayabilirsiniz.
 
-# Ekler
+## Ekler
 
 GitHub: <https://en.wikipedia.org/wiki/GitHub> Rust as a functional lang:
 <https://kerkour.com/rust-functional-programming>
