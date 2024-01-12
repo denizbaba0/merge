@@ -1,3 +1,7 @@
+> PROJE ANA DALI: `Yazılım`
+> PROJE TEMATIK ALANI: `Dijital Dönüşüm`
+> Proje ADI: Merge Paket Yöneticisi Emülatörü
+
 # ÖZET
 
 Son yıllarda dijital dünyada elde edilen yeni teknolojiler sayesinde program
